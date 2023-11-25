@@ -118,4 +118,4 @@ if __name__ == "__main__":
 
     # Display footer message
     with st.container():
-        st.markdown("###### Made with :heart: by @muhammedashhar ")
+        st.markdown("###### Made with :heart: by @ashhar, @rishalali, @anas, @akeel ")
