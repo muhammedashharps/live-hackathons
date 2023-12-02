@@ -6,13 +6,7 @@ import datetime
 import pygsheets
 import os
 
-st.markdown('''
-<style>
-.stApp [data-testid="stToolbar"]{
-    display:none;
-}
-</style>
-''', unsafe_allow_html=True)
+st.set_page_config(initial_sidebar_state="collapsed",page_title="HackOn", page_icon="📧",layout="wide")
 
 # Initialize pygsheets and wks object outside the main block
 service_file = os.environ.get("service_account_file", "haclathons-c80937c3ef59.json")
@@ -23,8 +17,6 @@ sheetname = "hackon"
 sh = gc.open(sheetname)
 wks = sh.worksheet_by_title("Sheet1")
 hackathon_list = []
-
-st.set_page_config(initial_sidebar_state="collapsed",page_title="HackOn", page_icon="📧",layout="wide")
 
 
 def load_anime(url):
