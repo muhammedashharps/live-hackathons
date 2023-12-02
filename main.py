@@ -6,13 +6,6 @@ import datetime
 import pygsheets
 import os
 
-st.markdown('''
-<style>
-.stApp [data-testid="stToolbar"]{
-    display:none;
-}
-</style>
-''', unsafe_allow_html=True)
 
 
 # Initialize pygsheets and wks object outside the main block
