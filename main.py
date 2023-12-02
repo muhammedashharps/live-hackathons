@@ -6,14 +6,13 @@ import datetime
 import pygsheets
 import os
 
-hide_streamlit_style = """
+st.markdown('''
 <style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
+.stApp [data-testid="stToolbar"]{
+    display:none;
+}
 </style>
-
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+''', unsafe_allow_html=True)
 
 
 # Initialize pygsheets and wks object outside the main block
