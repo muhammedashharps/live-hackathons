@@ -6,13 +6,6 @@ import datetime
 import pygsheets
 import os
 
-st.markdown('''
-<style>
-.stApp [data-testid="stToolbar"]{
-    display:none;
-}
-</style>
-''', unsafe_allow_html=True)
 
 # Initialize pygsheets and wks object outside the main block
 service_file = os.environ.get("service_account_file", "haclathons-c80937c3ef59.json")
